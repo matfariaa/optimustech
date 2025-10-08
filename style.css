@@ -1,0 +1,511 @@
+:root {
+   --branco: #FFFFFF;
+   --text-color: #667085;
+   --cor-logo: #3A404E;
+   --fonte-primaria:"Inter";
+   --vinho: #8E2424;
+   --cinza-escuro: #101828;
+   --border-color: #EAECF0;
+   --cor-rodape: #98A2B3;
+   --cor-de-fundo-rodape: #F9FAFB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-primaria);
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1em 2em;
+   margin: 0 auto;
+}
+
+.navbar__link {
+   margin-right: auto;
+   margin-left: 4em;
+}
+
+.navbar__link-menu {
+   color: var(--text-color);
+   text-decoration: none;
+   margin-right: 2em;
+}
+
+.navbar__botao-entrar {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background: none;
+  color: var(--text-color);
+  font-size: 0.9em;
+}
+
+.navbar__botao-entrar#botao {
+   background-color: var(--vinho);
+   color: var(--branco);
+}
+
+.container {
+   text-align: center;
+   padding: 4em 2em;
+   margin: 0 auto;
+}
+
+.container__subtitulo {
+   color: var(--vinho);
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.container__titulo {
+   color: var(--cinza-escuro);
+   font-size: 48px;
+   font-weight: 600;
+   margin: 0.5em;
+}
+
+.container__texto {
+   color: var(--text-color);
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 1.5;
+   margin: 0 auto;
+   max-width: 800px;
+}
+
+.container__info {
+  text-align: center;
+  padding: 1em;
+}
+
+.container__info__titulo-numero {
+   color: var(--vinho);
+   font-size: 60px;
+   font-weight: 600;
+   display: block;
+   margin-bottom: 0.5em;
+}
+
+.container__info__titulo-menor {
+   color: var(--cinza-escuro);
+   font-size: 18px;
+   font-weight: 500;
+   margin-bottom: 0.5em;
+}
+
+.container__info__texto {
+   color: var(--text-color);
+   font-size: 16px;
+   line-height: 1.4;
+}
+
+.container__estatisticas {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 2em;
+   margin: 0 auto;
+   padding: 4em 2em;
+}
+
+.container__vagas__subtitulo {
+   color: var(--vinho);
+   font-size: 14px;
+   font-weight: 500;
+   background-color: #8E242414;
+   padding: 0.4em 0.8em;
+   border-radius: 1em;
+   display: inline-block;
+}
+
+.container__vagas__titulo {
+   color: var(--cinza-escuro);
+   font-size: 36px;
+   font-weight: 600;
+   margin: 0.5em;
+}
+
+.container__vagas__texto {
+   color: var(--text-color);
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 1.5;
+   margin: 0 auto;
+   max-width: 800px;
+}
+
+.container__vagas__imagem {
+   margin-top: 4em;
+}
+
+.container,
+.container__vagas__imagem {
+   max-width: 100%;
+   height: auto;
+}
+
+.container__formulario {
+   margin: 3em auto;
+   max-width: 800px;
+   text-align: left;
+}
+
+.titulo-vaga {
+   font-size: 20px;
+   font-weight: 500;
+   color: var(--cinza-escuro);
+   margin-bottom: 1.5em;
+   display: block;
+}
+
+.vaga {
+   border: 1px solid var(--border-color);
+   border-radius: 0.8em;
+   padding: 1.5em;
+   margin-bottom: 1.5em;
+   background-color: var(--branco);
+   display: flex;
+   flex-direction: column;
+   gap: 0.8em;
+
+}
+
+.subtitulo-vaga {
+   font-size: 18px;
+   font-weight: 500;
+   color: var(--cinza-escuro);
+}
+
+.info-vaga {
+   display: flex;
+   gap: 2em;
+   color: var(--text-color);
+}
+
+.texto-vaga {
+   font-size: 16px;
+   font-weight: 500; 
+}
+
+.container__colaboradores {
+   background-color: #8E242414;
+   border-radius: 0.8em;
+   padding: 4em 2em;
+   max-width: 1200px;
+   margin: 4em auto;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+
+.colaboradores {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.subtitulo-colaboradores {
+   color: var(--vinho);
+   font-size: 14px;
+   font-weight: 600;
+   margin-bottom: 2em;
+   display: block;
+}
+
+.titulo-colaboradores {
+   color: var(--cinza-escuro);
+   font-size: 36px;
+   font-weight: 500;
+   margin: 0 auto 1.5em auto;
+   line-height: 1.4;
+   max-width: 800px;
+}
+
+.imagem-colaboradores {
+   margin-bottom: 0.5em;
+   border-radius: 50%;
+   width: 56px;
+   height: 56px;
+}
+
+.nome-colaboradores {
+   color: var(--cinza-escuro);
+   font-size: 16px;
+   font-weight: 500;
+   margin-bottom: 0.3em;
+}
+
+.texto-colaboradores {
+   color: var(--text-color);
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.container__oportunidades {
+ background-color: var(--cor-de-fundo-rodape);
+ text-align: center;
+ padding: 4em 2em;
+}
+
+.titulo-oportunidades {
+   font-size: 36px;
+   font-weight: 600;
+   color: var(--cinza-escuro);
+   margin-bottom: 0.5em;
+}
+
+.texto-oportunidades {
+   font-size: 20px;
+   font-weight: 400;
+   color: var(--text-color);
+   margin-bottom: 2em;
+}
+
+.oportunidades {
+   display: flex;
+   justify-content: center;
+   gap: 1em;
+   margin-bottom: 2.5em;
+
+}
+
+.input-oportunidades {
+   padding: 0 1em;
+   border: 1px solid var(--border-color);
+   border-radius: 0.5em;
+   font-size: 16px;
+   font-weight: 400;
+   color: var(--text-color);
+   width: 360px;
+   height: 48px;
+}
+
+.input-oportunidades::placeholder {
+   color: var(--text-color);
+}
+
+.botao-oportunidades {
+   background-color: var(--vinho);
+   color: var(--branco);
+   border: none;
+   padding: 0 1.5em;
+   border-radius: 0.5em;
+   font-size: 16px;
+   font-weight: 500;
+   cursor: pointer;
+   height: 48px;
+}
+
+.subtexto-oportunidades {
+   font-size: 16px;
+   font-weight: 400;
+   color: var(--cor-rodape);
+}
+
+
+
+/* ============================= */
+/* RESPONSIVIDADE - TABLET (≤768px) */
+/* ============================= */
+@media screen and (max-width: 768px) {
+
+   .navbar {
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+   }
+
+   .navbar__link {
+      margin: 0;
+      text-align: center;
+   }
+
+   .navbar__link-menu {
+      margin-right: 1em;
+      font-size: 15px;
+   }
+
+   .navbar__botao {
+      display: flex;
+      gap: 1em;
+   }
+
+   .container {
+      padding: 3em 1.5em;
+   }
+
+   .container__titulo {
+      font-size: 32px;
+   }
+
+   .container__texto {
+      font-size: 18px;
+      max-width: 90%;
+   }
+
+   .container__estatisticas {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 2.5em;
+   }
+
+   .container__info {
+      width: 100%;
+   }
+
+   .container__vagas__imagem {
+      width: 100%;
+      height: auto;
+   }
+
+   .container__formulario {
+      max-width: 90%;
+      margin: 2em auto;
+   }
+
+   .info-vaga {
+      flex-direction: column;
+      gap: 0.5em;
+   }
+
+   .container__colaboradores {
+      padding: 3em 1.5em;
+      margin: 3em 1.5em;
+   }
+
+   .titulo-colaboradores {
+      font-size: 26px;
+   }
+
+   .container__oportunidades {
+      padding: 3em 1.5em;
+   }
+
+   .oportunidades {
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+   }
+
+   .input-oportunidades,
+   .botao-oportunidades {
+      width: 85%;
+      height: 44px;
+      font-size: 15px;
+   }
+}
+
+/* ============================= */
+/* RESPONSIVIDADE - MOBILE (≤480px) */
+/* ============================= */
+@media screen and (max-width: 480px) {
+
+   .navbar {
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      padding: 1em;
+   }
+
+   .navbar__link-menu {
+      display: inline-block;
+      margin: 0.4em;
+      font-size: 14px;
+   }
+
+   .navbar__botao {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+   }
+
+   .navbar__botao-entrar,
+   .navbar__botao-entrar#botao {
+      width: 90%;
+      padding: 0.8em;
+   }
+
+   .container {
+      padding: 2.5em 1em;
+   }
+
+   .container__titulo {
+      font-size: 24px;
+   }
+
+   .container__texto {
+      font-size: 16px;
+      line-height: 1.4;
+   }
+
+   .container__estatisticas {
+      flex-direction: column;
+      gap: 2em;
+   }
+
+   .container__vagas__titulo {
+      font-size: 22px;
+   }
+
+   .container__vagas__texto {
+      font-size: 16px;
+   }
+
+   .container__formulario {
+      width: 90%;
+   }
+
+   .titulo-vaga {
+      font-size: 18px;
+   }
+
+   .subtitulo-vaga {
+      font-size: 16px;
+   }
+
+   .texto-vaga {
+      font-size: 14px;
+   }
+
+   .container__colaboradores {
+      padding: 2em 1em;
+      margin: 2em 1em;
+   }
+
+   .titulo-colaboradores {
+      font-size: 22px;
+   }
+
+   .container__oportunidades {
+      padding: 2.5em 1em;
+   }
+
+   .oportunidades {
+      flex-direction: column;
+      gap: 1em;
+   }
+
+   .input-oportunidades,
+   .botao-oportunidades {
+      width: 100%;
+      height: 42px;
+      font-size: 14px;
+   }
+
+   .subtexto-oportunidades {
+      font-size: 13px;
+   }
+}
+
